@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FE3669AA23D8AE7F00E27EDF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE3669A923D8AE7F00E27EDF /* main.cpp */; };
+		FE3669B223D8AFC900E27EDF /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE3669B023D8AFC900E27EDF /* Block.cpp */; };
+		FE3669B623D8B04200E27EDF /* ZXIOStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE3669B423D8B04200E27EDF /* ZXIOStream.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		FE3669A623D8AE7F00E27EDF /* Tetris */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tetris; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3669A923D8AE7F00E27EDF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FE3669B023D8AFC900E27EDF /* Block.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		FE3669B123D8AFC900E27EDF /* Block.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Block.hpp; sourceTree = "<group>"; };
+		FE3669B423D8B04200E27EDF /* ZXIOStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ZXIOStream.cpp; sourceTree = "<group>"; };
+		FE3669B523D8B04200E27EDF /* ZXIOStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ZXIOStream.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,28 @@
 			isa = PBXGroup;
 			children = (
 				FE3669A923D8AE7F00E27EDF /* main.cpp */,
+				FE3669B323D8B00800E27EDF /* Model */,
+				FE3669B723D8B04600E27EDF /* IO */,
 			);
 			path = Tetris;
+			sourceTree = "<group>";
+		};
+		FE3669B323D8B00800E27EDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE3669B023D8AFC900E27EDF /* Block.cpp */,
+				FE3669B123D8AFC900E27EDF /* Block.hpp */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE3669B723D8B04600E27EDF /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				FE3669B423D8B04200E27EDF /* ZXIOStream.cpp */,
+				FE3669B523D8B04200E27EDF /* ZXIOStream.hpp */,
+			);
+			path = IO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3669AA23D8AE7F00E27EDF /* main.cpp in Sources */,
+				FE3669B623D8B04200E27EDF /* ZXIOStream.cpp in Sources */,
+				FE3669B223D8AFC900E27EDF /* Block.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
